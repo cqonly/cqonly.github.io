@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="1.Rxjava的简介 1.概念一个词：异步的库   GitHub上对其简介是：“a library for composing asynchronous and event-based programs using observable sequences for the Java VM”    一个在java虚拟机上使用可观测的序列来组成异步的、基于事件的程序的库。    总的来说，核心就是异">
+<meta name="description" content="一.Rxjava的简介1.概念 一个词：异步的库 GitHub上对其简介是： “a library for composing asynchronous and event-based programs using observable sequences for the Java VM” 一个在java虚拟机上使用可观测的序列来组成异步的、基于事件的程序的库。 总的来说，核心就是异步。   2.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习Rxjava的一些总结">
 <meta property="og:url" content="https://githubhehe.github.io/2018/04/13/学习Rxjava的一些总结/index.html">
 <meta property="og:site_name" content="cq_fat2thin">
-<meta property="og:description" content="1.Rxjava的简介 1.概念一个词：异步的库   GitHub上对其简介是：“a library for composing asynchronous and event-based programs using observable sequences for the Java VM”    一个在java虚拟机上使用可观测的序列来组成异步的、基于事件的程序的库。    总的来说，核心就是异">
+<meta property="og:description" content="一.Rxjava的简介1.概念 一个词：异步的库 GitHub上对其简介是： “a library for composing asynchronous and event-based programs using observable sequences for the Java VM” 一个在java虚拟机上使用可观测的序列来组成异步的、基于事件的程序的库。 总的来说，核心就是异步。   2.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-18T11:54:36.855Z">
+<meta property="og:updated_time" content="2018-04-18T12:21:45.823Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习Rxjava的一些总结">
-<meta name="twitter:description" content="1.Rxjava的简介 1.概念一个词：异步的库   GitHub上对其简介是：“a library for composing asynchronous and event-based programs using observable sequences for the Java VM”    一个在java虚拟机上使用可观测的序列来组成异步的、基于事件的程序的库。    总的来说，核心就是异">
+<meta name="twitter:description" content="一.Rxjava的简介1.概念 一个词：异步的库 GitHub上对其简介是： “a library for composing asynchronous and event-based programs using observable sequences for the Java VM” 一个在java虚拟机上使用可观测的序列来组成异步的、基于事件的程序的库。 总的来说，核心就是异步。   2.">
 
 
 
@@ -299,16 +299,9 @@
       
 
       
-        <h2 id="1-Rxjava的简介"><a href="#1-Rxjava的简介" class="headerlink" title="1.Rxjava的简介"></a>1.Rxjava的简介</h2><ul>
-<li><p>1.概念<br>一个词：异步的库  </p>
-<p>GitHub上对其简介是：<br>“a library for composing asynchronous and event-based programs using observable sequences for the Java VM”   </p>
-<p>一个在java虚拟机上使用可观测的序列来组成异步的、基于事件的程序的库。   </p>
-<p>总的来说，核心就是异步。  </p>
-</li>
-<li><p>2.好处<br>一个词：简洁。主要指逻辑上的简洁。</p>
-</li>
-</ul>
-
+        <h1 id="一-Rxjava的简介"><a href="#一-Rxjava的简介" class="headerlink" title="一.Rxjava的简介"></a>一.Rxjava的简介</h1><h2 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念"></a>1.概念</h2><p> 一个词：异步的库<br> GitHub上对其简介是：<br> “a library for composing asynchronous and event-based programs using observable sequences for the Java VM”<br> 一个在java虚拟机上使用可观测的序列来组成异步的、基于事件的程序的库。<br> 总的来说，核心就是异步。  </p>
+<h2 id="2-好处"><a href="#2-好处" class="headerlink" title="2.好处"></a>2.好处</h2><p> 一个词：简洁。主要指逻辑上的简洁。  </p>
+<h1 id="二-Rxjava的Api介绍和原理分析"><a href="#二-Rxjava的Api介绍和原理分析" class="headerlink" title="二.Rxjava的Api介绍和原理分析"></a>二.Rxjava的Api介绍和原理分析</h1><h2 id="1-扩展的观察者模式"><a href="#1-扩展的观察者模式" class="headerlink" title="1.扩展的观察者模式"></a>1.扩展的观察者模式</h2><h3 id="观察者模式"><a href="#观察者模式" class="headerlink" title="观察者模式"></a>观察者模式</h3><h3 id="Rxjava的观察者模式"><a href="#Rxjava的观察者模式" class="headerlink" title="Rxjava的观察者模式"></a>Rxjava的观察者模式</h3><h2 id="2-基本实现"><a href="#2-基本实现" class="headerlink" title="2.基本实现"></a>2.基本实现</h2><h3 id="1）创建Observer"><a href="#1）创建Observer" class="headerlink" title="1）创建Observer"></a>1）创建Observer</h3><h3 id="2）创建Observable"><a href="#2）创建Observable" class="headerlink" title="2）创建Observable"></a>2）创建Observable</h3><h3 id="3）Subscribe-订阅"><a href="#3）Subscribe-订阅" class="headerlink" title="3）Subscribe(订阅)"></a>3）Subscribe(订阅)</h3><h3 id="4）场景示例"><a href="#4）场景示例" class="headerlink" title="4）场景示例"></a>4）场景示例</h3><h2 id="3-线程控制–Scheduler"><a href="#3-线程控制–Scheduler" class="headerlink" title="3.线程控制–Scheduler"></a>3.线程控制–Scheduler</h2>
       
     </div>
     
@@ -454,7 +447,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Rxjava的简介"><span class="nav-number">1.</span> <span class="nav-text">1.Rxjava的简介</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一-Rxjava的简介"><span class="nav-number">1.</span> <span class="nav-text">一.Rxjava的简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-概念"><span class="nav-number">1.1.</span> <span class="nav-text">1.概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-好处"><span class="nav-number">1.2.</span> <span class="nav-text">2.好处</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-Rxjava的Api介绍和原理分析"><span class="nav-number">2.</span> <span class="nav-text">二.Rxjava的Api介绍和原理分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-扩展的观察者模式"><span class="nav-number">2.1.</span> <span class="nav-text">1.扩展的观察者模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#观察者模式"><span class="nav-number">2.1.1.</span> <span class="nav-text">观察者模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Rxjava的观察者模式"><span class="nav-number">2.1.2.</span> <span class="nav-text">Rxjava的观察者模式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-基本实现"><span class="nav-number">2.2.</span> <span class="nav-text">2.基本实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1）创建Observer"><span class="nav-number">2.2.1.</span> <span class="nav-text">1）创建Observer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2）创建Observable"><span class="nav-number">2.2.2.</span> <span class="nav-text">2）创建Observable</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3）Subscribe-订阅"><span class="nav-number">2.2.3.</span> <span class="nav-text">3）Subscribe(订阅)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4）场景示例"><span class="nav-number">2.2.4.</span> <span class="nav-text">4）场景示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-线程控制–Scheduler"><span class="nav-number">2.3.</span> <span class="nav-text">3.线程控制–Scheduler</span></a></li></ol></li></ol></div>
             
 
           </div>
