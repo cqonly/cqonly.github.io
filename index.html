@@ -232,6 +232,125 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://githubhehe.github.io/2018/07/14/关于String-StringBuffer-StringBuilder之间区别的最新解答/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cq">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cq_fat2thin">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/14/关于String-StringBuffer-StringBuilder之间区别的最新解答/" itemprop="url">关于String,StringBuffer,StringBuilder之间区别的最新解答</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-14T10:55:17+08:00">
+                2018-07-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://githubhehe.github.io/2018/04/13/学习Rxjava的一些总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -305,7 +424,11 @@
           
             <h1 id="一-Rxjava的简介"><a href="#一-Rxjava的简介" class="headerlink" title="一.Rxjava的简介"></a>一.Rxjava的简介</h1><h2 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念"></a>1.概念</h2><p> 一个词：异步的库<br> GitHub上对其简介是：<br> “a library for composing asynchronous and event-based programs using observable sequences for the Java VM”<br> 一个在java虚拟机上使用可观测的序列来组成异步的、基于事件的程序的库。<br> 总的来说，核心就是异步。  </p>
 <h2 id="2-好处"><a href="#2-好处" class="headerlink" title="2.好处"></a>2.好处</h2><p> 一个词：简洁。主要指逻辑上的简洁。  </p>
-<h1 id="二-Rxjava的Api介绍和原理分析"><a href="#二-Rxjava的Api介绍和原理分析" class="headerlink" title="二.Rxjava的Api介绍和原理分析"></a>二.Rxjava的Api介绍和原理分析</h1><h2 id="1-扩展的观察者模式"><a href="#1-扩展的观察者模式" class="headerlink" title="1.扩展的观察者模式"></a>1.扩展的观察者模式</h2><h3 id="观察者模式"><a href="#观察者模式" class="headerlink" title="观察者模式"></a>观察者模式</h3><h3 id="Rxjava的观察者模式"><a href="#Rxjava的观察者模式" class="headerlink" title="Rxjava的观察者模式"></a>Rxjava的观察者模式</h3><h2 id="2-基本实现"><a href="#2-基本实现" class="headerlink" title="2.基本实现"></a>2.基本实现</h2><h3 id="1）创建Observer"><a href="#1）创建Observer" class="headerlink" title="1）创建Observer"></a>1）创建Observer</h3><h3 id="2）创建Observable"><a href="#2）创建Observable" class="headerlink" title="2）创建Observable"></a>2）创建Observable</h3><h3 id="3）Subscribe-订阅"><a href="#3）Subscribe-订阅" class="headerlink" title="3）Subscribe(订阅)"></a>3）Subscribe(订阅)</h3><h3 id="4）场景示例"><a href="#4）场景示例" class="headerlink" title="4）场景示例"></a>4）场景示例</h3><h2 id="3-线程控制–Scheduler"><a href="#3-线程控制–Scheduler" class="headerlink" title="3.线程控制–Scheduler"></a>3.线程控制–Scheduler</h2>
+<h1 id="二-Rxjava的Api介绍和原理分析"><a href="#二-Rxjava的Api介绍和原理分析" class="headerlink" title="二.Rxjava的Api介绍和原理分析"></a>二.Rxjava的Api介绍和原理分析</h1><h2 id="1-扩展的观察者模式"><a href="#1-扩展的观察者模式" class="headerlink" title="1.扩展的观察者模式"></a>1.扩展的观察者模式</h2><p>Rxjava的异步实现，是通过一种扩展的观察者模式来实现的。先来讲一下观察者模式。</p>
+<h3 id="1）观察者模式"><a href="#1）观察者模式" class="headerlink" title="1）观察者模式"></a>1）观察者模式</h3><blockquote>
+<p>观察者模式采用注册或者称为订阅的方式，告诉被观察者：我需要你的某某状态，你要<br>在它变化的时候通知我。<br>Android中的典型案例是点击事件的监听器 OnClickListener</p>
+</blockquote>
+<h3 id="2）Rxjava的观察者模式"><a href="#2）Rxjava的观察者模式" class="headerlink" title="2）Rxjava的观察者模式"></a>2）Rxjava的观察者模式</h3><h2 id="2-基本实现"><a href="#2-基本实现" class="headerlink" title="2.基本实现"></a>2.基本实现</h2><h3 id="1）创建Observer"><a href="#1）创建Observer" class="headerlink" title="1）创建Observer"></a>1）创建Observer</h3><h3 id="2）创建Observable"><a href="#2）创建Observable" class="headerlink" title="2）创建Observable"></a>2）创建Observable</h3><h3 id="3）Subscribe-订阅"><a href="#3）Subscribe-订阅" class="headerlink" title="3）Subscribe(订阅)"></a>3）Subscribe(订阅)</h3><h3 id="4）场景示例"><a href="#4）场景示例" class="headerlink" title="4）场景示例"></a>4）场景示例</h3><h2 id="3-线程控制–Scheduler"><a href="#3-线程控制–Scheduler" class="headerlink" title="3.线程控制–Scheduler"></a>3.线程控制–Scheduler</h2>
           
         
       
@@ -514,7 +637,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
