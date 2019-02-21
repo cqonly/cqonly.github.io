@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="以下是原文和翻译英文原文：https://medium.com/androiddevelopers/picking-your-compilesdkversion-minsdkversion-targetsdkversion-a098a0341ebd中文翻译：https://chinagdg.org/2016/01/picking-your-compilesdkversion-minsdkversi">
+<meta name="description" content="以下是原文和翻译英文原文：Picking your compileSdkVersion, minSdkVersion, and targetSdkVersion中文翻译：如何选择 compileSdkVersion, minSdkVersion 和 targetSdkVersion">
 <meta name="keywords" content="Gradle">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Gradle中compileSdkVersion, minSdkVersion,targetSdkVersion的含义">
 <meta property="og:url" content="https://githubhehe.github.io/2018/02/21/Gradle中compileSdkVersion-minSdkVersion-targetSdkVersion的含义/index.html">
 <meta property="og:site_name" content="cq_fat2thin">
-<meta property="og:description" content="以下是原文和翻译英文原文：https://medium.com/androiddevelopers/picking-your-compilesdkversion-minsdkversion-targetsdkversion-a098a0341ebd中文翻译：https://chinagdg.org/2016/01/picking-your-compilesdkversion-minsdkversi">
+<meta property="og:description" content="以下是原文和翻译英文原文：Picking your compileSdkVersion, minSdkVersion, and targetSdkVersion中文翻译：如何选择 compileSdkVersion, minSdkVersion 和 targetSdkVersion">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-21T08:37:47.098Z">
+<meta property="og:updated_time" content="2019-02-21T08:40:58.504Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Gradle中compileSdkVersion, minSdkVersion,targetSdkVersion的含义">
-<meta name="twitter:description" content="以下是原文和翻译英文原文：https://medium.com/androiddevelopers/picking-your-compilesdkversion-minsdkversion-targetsdkversion-a098a0341ebd中文翻译：https://chinagdg.org/2016/01/picking-your-compilesdkversion-minsdkversi">
+<meta name="twitter:description" content="以下是原文和翻译英文原文：Picking your compileSdkVersion, minSdkVersion, and targetSdkVersion中文翻译：如何选择 compileSdkVersion, minSdkVersion 和 targetSdkVersion">
 
 
 
@@ -300,7 +300,7 @@
       
 
       
-        <h4 id="以下是原文和翻译"><a href="#以下是原文和翻译" class="headerlink" title="以下是原文和翻译"></a>以下是原文和翻译</h4><h4 id="英文原文：https-medium-com-androiddevelopers-picking-your-compilesdkversion-minsdkversion-targetsdkversion-a098a0341ebd"><a href="#英文原文：https-medium-com-androiddevelopers-picking-your-compilesdkversion-minsdkversion-targetsdkversion-a098a0341ebd" class="headerlink" title="英文原文：https://medium.com/androiddevelopers/picking-your-compilesdkversion-minsdkversion-targetsdkversion-a098a0341ebd"></a>英文原文：<a href="">https://medium.com/androiddevelopers/picking-your-compilesdkversion-minsdkversion-targetsdkversion-a098a0341ebd</a></h4><h4 id="中文翻译：https-chinagdg-org-2016-01-picking-your-compilesdkversion-minsdkversion-targetsdkversion"><a href="#中文翻译：https-chinagdg-org-2016-01-picking-your-compilesdkversion-minsdkversion-targetsdkversion" class="headerlink" title="中文翻译：https://chinagdg.org/2016/01/picking-your-compilesdkversion-minsdkversion-targetsdkversion/"></a>中文翻译：<a href="">https://chinagdg.org/2016/01/picking-your-compilesdkversion-minsdkversion-targetsdkversion/</a></h4>
+        <h4 id="以下是原文和翻译"><a href="#以下是原文和翻译" class="headerlink" title="以下是原文和翻译"></a>以下是原文和翻译</h4><h4 id="英文原文：Picking-your-compileSdkVersion-minSdkVersion-and-targetSdkVersion"><a href="#英文原文：Picking-your-compileSdkVersion-minSdkVersion-and-targetSdkVersion" class="headerlink" title="英文原文：Picking your compileSdkVersion, minSdkVersion, and targetSdkVersion"></a>英文原文：<a href="https://medium.com/androiddevelopers/picking-your-compilesdkversion-minsdkversion-targetsdkversion-a098a0341ebd" target="_blank" rel="noopener">Picking your compileSdkVersion, minSdkVersion, and targetSdkVersion</a></h4><h4 id="中文翻译：如何选择-compileSdkVersion-minSdkVersion-和-targetSdkVersion"><a href="#中文翻译：如何选择-compileSdkVersion-minSdkVersion-和-targetSdkVersion" class="headerlink" title="中文翻译：如何选择 compileSdkVersion, minSdkVersion 和 targetSdkVersion"></a>中文翻译：<a href="https://chinagdg.org/2016/01/picking-your-compilesdkversion-minsdkversion-targetsdkversion/" target="_blank" rel="noopener">如何选择 compileSdkVersion, minSdkVersion 和 targetSdkVersion</a></h4>
       
     </div>
     
@@ -461,7 +461,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#以下是原文和翻译"><span class="nav-number">1.</span> <span class="nav-text">以下是原文和翻译</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#英文原文：https-medium-com-androiddevelopers-picking-your-compilesdkversion-minsdkversion-targetsdkversion-a098a0341ebd"><span class="nav-number">2.</span> <span class="nav-text">英文原文：https://medium.com/androiddevelopers/picking-your-compilesdkversion-minsdkversion-targetsdkversion-a098a0341ebd</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#中文翻译：https-chinagdg-org-2016-01-picking-your-compilesdkversion-minsdkversion-targetsdkversion"><span class="nav-number">3.</span> <span class="nav-text">中文翻译：https://chinagdg.org/2016/01/picking-your-compilesdkversion-minsdkversion-targetsdkversion/</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#以下是原文和翻译"><span class="nav-number">1.</span> <span class="nav-text">以下是原文和翻译</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#英文原文：Picking-your-compileSdkVersion-minSdkVersion-and-targetSdkVersion"><span class="nav-number">2.</span> <span class="nav-text">英文原文：Picking your compileSdkVersion, minSdkVersion, and targetSdkVersion</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#中文翻译：如何选择-compileSdkVersion-minSdkVersion-和-targetSdkVersion"><span class="nav-number">3.</span> <span class="nav-text">中文翻译：如何选择 compileSdkVersion, minSdkVersion 和 targetSdkVersion</span></a></li></ol></div>
             
 
           </div>
